@@ -1,5 +1,5 @@
 {
-  "name": "checkbox-sample-vue3",
+  "name": "prayground-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "next",
-    "vue-class-component": "^8.0.0-0",
+    "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
@@ -41,5 +40,14 @@
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }

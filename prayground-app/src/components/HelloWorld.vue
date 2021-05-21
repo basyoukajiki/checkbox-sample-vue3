@@ -125,22 +125,18 @@
     </ul>
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "HelloWorld",
   props: {
-    msg: {
-      type: String
-    }
-  },
-  setup(props) {
-    const message = `${props.msg}. + Vue3`;
-    return { message };
+    msg: String
   }
 });
 </script>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h3 {
